@@ -14,6 +14,11 @@ For more information, see the [course curriculum](https://nextjs.org/learn) on t
 * Layouts
   * Easy way to share UI structure across separate "pages"
   * Enable Partial Renderings for UI to keep things fast + efficient
+* Next Project Structure
+  * Nav is directory path based, relative from `/app`.  Put page / layout files here.
+  * Put other UI components to compose pages inside `/app/ui`
+  * Put stuff like utils, defs, data fxns inside `/app/lib`
+  * Static data like bundled images / icons can go in `/public`
 * `<Link>`
   * Allows client-side navigation b/w pages
   * Next can pre-fetch pages sensibly based on the derived link tree 
@@ -21,4 +26,4 @@ For more information, see the [course curriculum](https://nextjs.org/learn) on t
   * React Server Components allow secure data access w/o an API layer
   * Vercel SDKs allow easy data access w/in server components
   * Can use SQL directly or an ORM like Prisma
-* 
+  * Parallelized data requests w/ `Promise.all()` help prevent waterfalls
